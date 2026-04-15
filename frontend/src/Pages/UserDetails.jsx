@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 
 function UserDetails(){
     const [name, setName] = useState('');
@@ -7,13 +8,16 @@ function UserDetails(){
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
 
+    const navigate = useNavigate();
+
     const handleClick = () => {
         console.log(name)
         console.log(email)
         console.log(userName)
         console.log(password)
         console.log(confirmPassword)
-
+        
+        navigate('/user-dashboard')
     }
 
     return(

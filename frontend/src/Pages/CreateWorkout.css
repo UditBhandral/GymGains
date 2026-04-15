@@ -1,0 +1,88 @@
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Input + Select */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* Grid */
+.workout-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 15px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Cards */
+.card {
+    background: #1e1e1e;
+    color: white;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: #333;
+}
+
+/* Selected */
+.card.selected {
+    opacity: 0.4;
+    pointer-events: none;
+    transform: scale(0.95);
+}
+
+/* Created */
+.created-list {
+    margin-top: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.created-card {
+    background: #ff4d4d;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 5px 0;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    background: #ff4d4d;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Saved blocks */
+.workout-block {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/* Placeholder */
+.placeholder {
+    text-align: center;
+    color: gray;
+}
